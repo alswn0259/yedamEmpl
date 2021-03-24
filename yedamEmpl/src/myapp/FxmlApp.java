@@ -10,7 +10,7 @@ public class FxmlApp extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-				Parent root = FXMLLoader.load(getClass().getResource("viewPackage/Board.fxml")); //Label, Button
+				Parent root = FXMLLoader.load(getClass().getResource("chartControl/Root.fxml")); //Label, Button
 				//이거를 테그를 가지고 만들겠다는 것. 
 				//VBox 이건 AnchorPane 이건 Parent 타입으로 하면 다 받을 수 있음
 				
@@ -25,7 +25,7 @@ public class FxmlApp extends Application{
 	}
 	
 	public static void main(String[] args) {
-		Application.launch(args);
+		
 	}
 	
 }

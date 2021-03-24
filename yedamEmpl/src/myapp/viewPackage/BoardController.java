@@ -157,7 +157,7 @@ import javafx.util.Callback;
 			stage.setScene(scene);
 			stage.show();
 			
-			Button btnReg = (Button) ap.lookup("#btnReg");
+			Button btnReg = (Button) ap.lookup("#btnReg"); //등록버튼
 			btnReg.setOnAction(new EventHandler<ActionEvent>() {
 
 				@Override

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="320.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentApp.RootController">
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="추가">
+               <HBox.margin>
+                  <Insets left="220.0" top="50.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="tableView" prefHeight="220.0" prefWidth="542.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="127.0" text="이름" />
+          <TableColumn prefWidth="128.0" text="국어" />
+            <TableColumn minWidth="0.0" prefWidth="127.0" text="수학" />
+            <TableColumn prefWidth="119.0" text="영어" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
